@@ -14,7 +14,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4">
+    <div className="min-h-screen  bg-black text-white flex flex-col items-center justify-center px-4">
       <input
         type="text"
         placeholder="Enter GitHub username or URL"
@@ -24,9 +24,9 @@ export default function Home() {
       />
       <button
         onClick={handleSubmit}
-        className="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition"
+        className="bg-blue-500 px-4 py-2  rounded-2xl hover:bg-blue-600 transition"
       >
-        Go to Dashboard
+        Generate GitHub Card
       </button>
     </div>
   );

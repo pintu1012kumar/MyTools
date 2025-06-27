@@ -54,10 +54,10 @@ export default function Dashboard() {
             ref={cardRef}
             className="relative mt-10 p-6 w-full max-w-sm rounded-2xl text-center bg-[#0a0a0a] border border-gray-700 shadow-lg overflow-hidden"
           >
-            {/* Glowing Gradient at Bottom */}
+            
             <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-blue-700/30 to-transparent pointer-events-none" />
 
-            {/* Avatar */}
+        
             <img
               src={userData.avatar_url}
               alt="avatar"
@@ -68,7 +68,7 @@ export default function Dashboard() {
             </h2>
             <p className="text-sm text-gray-400 mt-1">{userData.bio}</p>
 
-            {/* Social Icons */}
+            
             <div className="flex justify-center space-x-6 mt-4 text-xl text-white">
               <a href={userData.html_url} target="_blank"><FaGithub /></a>
               {userData.twitter_username && (
@@ -86,7 +86,7 @@ export default function Dashboard() {
               )}
             </div>
 
-            {/* Stats */}
+            
             <div className="flex justify-between items-center mt-6 px-4 text-sm text-gray-300">
               <div className="text-center">
                 <p className="text-white font-medium">{userData.followers}</p>
@@ -102,12 +102,12 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Calendar */}
+           
             <div className="mt-6 w-[340px] sm:w-[400px] mx-auto overflow-hidden">
               <GitHubCalendar
                 username={userData.login}
                 colorScheme="dark"
-                blockSize={5}
+                blockSize={4.5}
                 blockMargin={2}
                 fontSize={10}
                 showWeekdayLabels={false}
